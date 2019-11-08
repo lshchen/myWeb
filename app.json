@@ -1,13 +1,36 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#E31A46",
+    "navigationBarTitleText": "世界影城",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#AFADAD",
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "./assets/images/tabbar-icon/tabbar_movie.png",
+        "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_movie.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "卖品",
+        "iconPath": "./assets/images/tabbar-icon/tabbar_shop.png",
+        "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_shop.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./assets/images/tabbar-icon/tabbar_user.png",
+        "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_user.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
