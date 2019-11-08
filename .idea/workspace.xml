@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92f8ae28-6e07-402c-82d9-05e5ebb125f8" name="Default Changelist" comment="feat: weui">
+      <change afterPath="$PROJECT_DIR$/assets/css/weui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/address_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/border_bg_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cancle_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cinema-car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/code-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/dis_seat_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/empty_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/film_details_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/film_schedule_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/finish_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/goods-car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/head_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ice-cream.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/login-bgimg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/lover-seat/loves-seat-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/lover-seat/loves-seat-slt-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/lover-seat/loves-seat-slted-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/member_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/movie_order_null.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/phone_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/phone_login_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/phone_vif_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/position_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/screen_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/seat_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/select_seat_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/shop_order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/show_seat_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/spirit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/star_red_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/star_white_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_movie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_selected_movie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_selected_shop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_selected_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_shop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tabbar-icon/tabbar_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ticket_order_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/unpaid_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/unused_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/used_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/user_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/wx-car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/example.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/example.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_footer_link.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_actionSheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_article.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_cell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_dialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_feedback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_flow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_layout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_msg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_search_bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_special.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_toast.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_z-index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_nav_zindex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/icon_tabbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/layers/content.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/layers/navigation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/layers/popout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/layers/transparent.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/pic_160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/pic_article.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/vcode.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/actionSheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/cell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/dialog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/dialog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/progress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/qrcode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/toast1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/snapshot/toast2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/zepto.min.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-58" />
+    <option name="y" value="94" />
+    <option name="width" value="1118" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="weixin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="G:/lucky_draw" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\weixin\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92f8ae28-6e07-402c-82d9-05e5ebb125f8" name="Default Changelist" comment="" />
+      <created>1573114581765</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573114581765</updated>
+      <workItem from="1573114582911" duration="2590000" />
+      <workItem from="1573206234156" duration="886000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 创建项目模板">
+      <created>1573114678817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573114678817</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 封装request请求">
+      <created>1573116451139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573116451139</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 上传图片文件">
+      <created>1573116567133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573116567133</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: weui">
+      <created>1573206264419</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573206264419</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3476000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969843" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49939686" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50060314" side_tool="true" visible="true" weight="0.3295964" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 创建项目模板" />
+    <MESSAGE value="feat: 封装request请求" />
+    <MESSAGE value="feat: 上传图片文件" />
+    <MESSAGE value="feat: weui" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: weui" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/utils/util.js" />
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
