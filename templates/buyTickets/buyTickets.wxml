@@ -1,0 +1,5 @@
+<template name="buyTickets">
+  <view class="buy_tickets">
+    立即购买
+  </view>
+</template>

@@ -1,0 +1,7 @@
+<!--components/nav_bar.wxml-->
+<view class='nav_bar' style='height:{{navHeight}}px;background-color:{{bgColor}};'>
+  <view style='top:{{navTop}}px;' class='content'>
+     <image src="../../assets/images/position_icon.png"></image>
+    <view>{{address ? address : '兴隆大奥莱(浑南店)'}}</view>
+  </view>
+</view>

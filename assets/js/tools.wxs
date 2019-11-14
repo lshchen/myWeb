@@ -1,0 +1,200 @@
+// 字符超出26显示...
+var addrSplice = function (str) {
+    if (str.length >= 26) {
+        var addr = str.substring(0, 26) + '...';
+        return addr;
+    }
+}
+// 手机号加****
+var toHidePhone = function (array) {
+    if (array != '' && array != null) {
+        var mphone = array.substring(0, 3) + '****' + array.substring(7);
+        return mphone;
+    }
+}
+// 姓名加*
+var toHideName = function (array) {
+    if (array != '' && array != null) {
+        var mname = '*' + array.substring(1);
+        return mname;
+    }
+}
+//姓名长度超4，省略...
+var toSpliceName = function (str) {
+    if (str.length >= 4) {
+        var name = str.substring(0, 3) + '...';
+        return name;
+    } else {
+        return str;
+    }
+}
+// 证件号加*
+var toHideCarNum = function (array) {
+    if (array != '' && array != null) {
+        var mcarnumber = array.substring(0, 2) + '************' + array.substring(14);
+        return mcarnumber;
+    }
+}
+
+// 卡号加密****
+var toHide = function (array) {
+    var mcode = array.substring(0, 4) + '*****';
+    return mcode;
+}
+
+// 卡号空格处理
+var cardNumSpace = function (str) {
+    var cardnumber = str.substring(0, 4) + ' ' + str.substring(4, 8) + ' ' + str.substring(8, 12) + ' ' + str.substring(12);
+    return cardnumber;
+}
+
+//日期截取
+var dataCut = function(str) {
+    var data = str.split(" ");
+    data = data[1].split(":");
+    data = data[0] + ":" + data[1];
+    return data; 
+}
+
+//判断数据类型
+var dataType = function(obj) {
+    var type = typeof(obj),
+        data = '';
+    if (type == "object") {
+        data = obj.length;
+    } if (type == "string") {
+        data = obj;
+    }
+    return data;
+}
+
+//处理座位
+var seatData = function(str) {
+    var data = str.split("#");
+    return data = data[1] + "排" + data[2] + "座"; 
+}
+
+// "MM-DD HH：MM" 时间格式化
+var printfData = function(str) {
+    var data = str.split(" ");
+    datalf = data[0].split("-");
+    datarf = data[1].split(":");
+    return alldata = datalf[1] + "月" + datalf[2] + "日" + " " + datarf[0] + ":" + datarf[1];
+}
+
+// "MM-DD" 日期格式化
+var printfDatas = function (str) {
+    var data = str.split(" ");
+    datalf = data[0].split("-");
+    return alldata = datalf[1] + "月" + datalf[2] + "日";
+}
+
+// 数据类型转换 string => number 
+var dataTypeCast = function (str1, str2, str3) {
+    var a,b,c;
+    if (str1) {
+        a = str1;
+    } else {
+        a = 0.00;
+    }
+
+    if (str2) {
+        b = str2;
+    } else {
+        b = 0.00;
+    }
+
+    if (str3) {
+        c = str3;
+    } else {
+        c = 0.00;
+    }
+
+    num = parseInt(a) + parseInt(b) + parseInt(c);
+    return num.toFixed(2);
+}
+
+// 数组转字符串拼接
+var concatStr = function (arry) {
+    var str = [];
+    if (arry && arry.length > 1) {
+        for (var i = 0; i < arry.length; i++) {
+            str.push(arry[i].name)
+        }
+        str = str.join(" / ");
+    } else if (arry && arry.length == 1){
+        str = arry[0].name;
+    }
+    return str;
+}
+
+//截取字符串后8位
+var getCutStr = function (str) {
+    var data = str.substring(str.length - 8);
+    return data;
+}
+
+//数字金额显示处理
+var showMoney = function (str, type) {
+    if (str.indexOf(".") != -1) {
+        var data = str.split(".");
+        return data[type];
+    } else {
+        return true;
+    }
+}
+
+//倒计时格式化
+var cutDown = function(data) {
+    if(data >= 0) {
+        var m = parseInt(data/60);
+        var s = parseInt(data) % 60;
+        // if (m < 10) {
+        //     m = "0" + m;
+        // }
+        if (s < 10) {
+            s = "0" + s;
+        }
+        return data = m + " " + "分" + " " + s + " " + "秒";
+    } else {
+        return data = "0" + " " + "分" + " " + "0" + " " + "秒";
+    }
+}
+
+//有效时间处理
+var dataTime = function(data) {
+    if(data) {
+        var str = data.split(" ");
+        str = str[0];
+        return str;
+    } else {
+        return data;
+    }
+}
+
+//浮点转整型
+var dataParseIn = function(data) {
+    return data = Number(data);
+}
+
+module.exports = {
+    toHidePhone: toHidePhone,
+    toHideName: toHideName,
+    toHideCarNum: toHideCarNum,
+    addrSplice: addrSplice,
+    toSpliceName: toSpliceName,
+    toHidecode: toHide,
+    cardNumSpace: cardNumSpace,
+    dataCut: dataCut,
+    dataType: dataType,
+    seatData: seatData,
+    printfData: printfData,
+    dataTypeCast: dataTypeCast,
+    printfDatas: printfDatas,
+    concatStr: concatStr,
+    getCutStr: getCutStr,
+    showMoney: showMoney,
+    cutDown: cutDown,
+    dataTime: dataTime,
+    dataParseIn: dataParseIn
+}

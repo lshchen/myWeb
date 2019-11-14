@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "acting_staff": "../../components/acting_staff/action_staff"
+  },
+  "navigationBarTitleText": "影片详情",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}

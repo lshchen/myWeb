@@ -1,0 +1,15 @@
+<!--components/banner/banner.wxml-->
+<view class="banner_content">
+  <swiper class="banner" autoplay="{{ true }}" circular="{{true}}" bindchange="changeIndex">
+    <block wx:for="{{bannerList}}" wx:key="index">
+      <swiper-item class="banner-jpg">
+        <image bindtap='goTobannerd' data-idx="{{ index }}" src="{{ item.image }}" class="slide-image" mode='aspectFill' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{bannerList}}" wx:key="unique">
+      <view class="dot {{index == swiperCurrent ? 'active' : ''}}"></view>
+    </block>
+  </view>
+</view>

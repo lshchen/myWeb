@@ -1,0 +1,12 @@
+<!--pages/movice_detail/movice_detail.wxml-->
+<import src="../../templates/buyTickets/buyTickets"/>
+<import src="../../components/Stars/Stars.wxml" />
+<view class="movice_details">
+    <view class="details">
+    <template is="rater" data="{{ ...$wux.rater.decimal }}" />
+    </view>
+    <view class="starts">
+      <acting_staff></acting_staff>  
+    </view>
+</view>
+<template is="buyTickets"></template>

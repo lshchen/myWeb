@@ -1,0 +1,5 @@
+<template name="titles">
+  <view class="titles">
+    {{contentTitle}}
+  </view>
+</template>

@@ -1,0 +1,23 @@
+/* pages/movice_detail/movice_detail.wxss */
+@import '../../templates/buyTickets/buyTickets.wxss';
+page{
+  background: #f8f8f8;
+}
+.movice_details {
+  padding: 10rpx 32rpx;
+}
+
+.movice_details .details {
+  width: 686rpx;
+  height: 473rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20rpx;
+}
+
+.movice_details .starts {
+  width: 686rpx;
+  height: 293rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20rpx;
+  margin-top:20rpx;
+}

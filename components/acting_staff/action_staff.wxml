@@ -1,0 +1,7 @@
+<!--components/acting_staff/action_staff.wxml-->
+<view>
+  <text>演职人员</text>
+  <scroll-view>
+    aa
+  </scroll-view>
+</view>

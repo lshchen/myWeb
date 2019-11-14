@@ -1,0 +1,44 @@
+/* components/banner/banner.wxss */
+
+.banner_content {
+  padding: 0 32rpx;
+  padding-top: 10rpx;
+  position:relative;
+  margin-bottom: 10rpx;
+}
+
+.banner {
+  margin-top: 5rpx;
+  text-align: center;
+}
+
+.banner .slide-image {
+  width: 686rpx;
+  height: 275rpx;
+  border-radius: 20rpx;
+}
+
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  margin: 0 10rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background: #ccc;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.dot.active {
+  width: 30rpx;
+  height: 10rpx;
+  border-radius: 15rpx;
+  background: #ff2525;
+}

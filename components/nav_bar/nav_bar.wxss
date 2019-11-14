@@ -1,0 +1,38 @@
+/* components/nav_bar.wxss */
+.nav_bar{
+  width:100%;
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+}
+.nav_bar .content{
+  width:100%;
+  position: absolute;
+  left: 18rpx;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  line-height:1;
+}
+.nav_bar .content image{
+  width:27px;
+  height:27px;
+  margin-right:7px;
+}
+.nav_bar .content view{
+  width:208px;
+  height:29px;
+  line-height:29px;
+  font-size:16px;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}

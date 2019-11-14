@@ -1,0 +1,13 @@
+<view class="movices">
+  <image src="{{movices.video_image}}"></image>
+  <view class="movice_content">
+    <view class="movice_title cell">{{movices.FilmName}}</view>
+    <view class="movice_desc cell">{{movices.subhead}}</view>
+    <view class="movice_director cell">导演：{{movices.direct_list[0].name}}</view>
+    <view class="movice_star cell">主演：{{acts[index]}}</view>
+  </view>
+  <view class="operation">
+    <text class="score">{{movices.score ? movices.score : 0}}分</text>
+    <view class="btn" data-id="{{FilmCode}}" catchtap="buyTicket">购票</view>
+  </view>
+</view>

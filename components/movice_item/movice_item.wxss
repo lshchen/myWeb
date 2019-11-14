@@ -1,0 +1,66 @@
+/* components/movice_item/movice_item.wxss */
+
+.movices {
+  margin: 0 32rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 20rpx 0;
+}
+
+.movices image {
+  width: 130rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.movices .movice_content {
+  width: 410rpx;
+  text-indent: 20rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.movices .movice_content .movice_title {
+  font-size: 28rpx;
+  color: #000;
+  font-weight: 600;
+}
+
+.movices .movice_content .movice_desc, .movices .movice_content .movice_director,
+.movices .movice_content .movice_star {
+  color: #999;
+}
+
+.cell {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.movices .operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.movices .operation .score {
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(255, 40, 37, 1);
+}
+
+.movices .operation .btn {
+  width: 100rpx;
+  height: 50rpx;
+  background: linear-gradient(90deg, rgba(255, 37, 37, 1) 0%, rgba(255, 96, 34, 1) 100%);
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 30rpx;
+}
