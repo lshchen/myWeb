@@ -1,14 +1,16 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/richText/richText",
+    "pages/movice_detail/movice_detail"
   ],
   "window": {
-    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#E31A46",
     "navigationBarTitleText": "世界影城",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#AFADAD",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "red",
+    "backgroundTextStyle": "dark"
   },
   "tabBar": {
     "list": [
@@ -31,6 +33,11 @@
         "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_user.png"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于定位附近影院"
+    }
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

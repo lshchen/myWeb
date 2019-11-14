@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navbar": "../../components/nav_bar/nav_bar",
+    "banner": "../../components/banner/banner",
+    "movice_item": "../../components/movice_item/movice_item"
+  },
+  "navigationStyle": "custom"
 }

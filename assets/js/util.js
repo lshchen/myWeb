@@ -1,7 +1,9 @@
+const app = getApp();
 /**
  * 封装request请求
  */
 const PromiseRequest = (url,data,method,dataType)=>{
+  url = app.getUrl(url);
   !url? '': url;
   !data? '':data;
   dataType === 'josn' ? 'application/json' : 'application/x-www-form-urlencoded';

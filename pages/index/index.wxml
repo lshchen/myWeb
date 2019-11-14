@@ -1,13 +1,27 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<import src="../../templates/title/title" />
+<navbar address="{{addressTitle}}"></navbar>
+<view class="content" style="margin-top:{{contentTop}}px;">
+  <banner bannerList="{{imgUrls}}"></banner>
+  <template is="titles" data="{{contentTitle: '正在热播'}}"></template>
+  <view class="movies" wx-if="{{!loading}}">
+    <block wx:for="{{dataList}}" wx:key="{{index}}" >
+      <movice_item movices="{{item}}" index="{{index}}"  bindtap="godetail" data-id="{{item.FilmCode}}" FilmCode="{{item.FilmCode}}"></movice_item>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="more_data">
+    <div class="weui-loadmore" wx-if="{{loading}}">
+      <i class="weui-loading"></i>
+      <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+  </view>
+  <!-- 遮罩 -->
+  <view class="controls" hidden="{{ isShade }}" bindtap="hideShade">
+    <view class="controls-img">
+      <icon class="top-l" type="cancel" size="22" color="#fff" catchtap="hideShade" />
+      <image class="img" src="{{ adPic }}" catchtap="gotoAd" />
+    </view>
+  </view>
+  <view style="height:2000px;">
   </view>
 </view>

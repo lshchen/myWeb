@@ -1,18 +1,33 @@
 //app.js
+import apiUrl from './assets/js/API.js'
+import Wux from 'components/wux'
 App({
   onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-
+   wx.setBackgroundFetchToken({
+     token: 'aa'
+   });
+    wx.onBackgroundFetchData({
+      success: function () {
+        console.log('bb');
       }
-    })
+    });
+    /**
+     * 获得头部胶囊的高度、宽度
+     */
+    let clientRect = wx.getMenuButtonBoundingClientRect();
+    wx.getSystemInfo({
+      success: (res)=> {
+        let statusBarHeight = res.statusBarHeight;
+        let navTop = clientRect.top; //胶囊按钮与顶部的距离
+        let navHeight = statusBarHeight + clientRect.height + (clientRect.top - statusBarHeight) * 2; //导航高度
+        this.globalData.navHeight = navHeight;
+        this.globalData.navTop = navTop;
+        this.globalData.windowHeight = res.windowHeight;
+      },
+      fail: function(err){
+        this.infoTip(err.Msg);
+      }
+    });
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -32,9 +47,33 @@ App({
           })
         }
       }
-    })
+    });
   },
   globalData: {
     userInfo: null
-  }
+  },
+  /**获取url */
+  getUrl (key) {
+    return apiUrl.getUrl(key);
+  },
+  /**信息提示 */
+  infoTip(Msg) {
+    wx.showTabBar({
+      title: Msg || '数据异常',
+      icon: 'none',
+      mask: true
+    })
+  },
+  /**
+     * 图片地址拼接函数  arry(一维数组)
+     */
+  concatImgUrl(arry, key) {
+    if (arry.length > 0) {
+      for (var i = 0; i < arry.length; i++) {
+        arry[i][key] = wx.getStorageSync('backend_domain') + arry[i][key];
+      }
+    }
+    return arry;
+  },
+  Wux: Wux,
 })
