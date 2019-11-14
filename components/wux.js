@@ -1,7 +1,7 @@
 
 // import Prompt from 'prompt/prompt'
 
-import Rater from 'Stars/Stars'
+import Stars from 'Stars/Stars'
 
 
 export default function() {
@@ -9,7 +9,7 @@ export default function() {
 		
 		// $wuxPrompt     : Prompt, 
 	
-		$wuxRater      : Rater, 
+    $wuxRater: Stars, 
 	
 	}
-}
+}   

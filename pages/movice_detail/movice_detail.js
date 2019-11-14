@@ -41,6 +41,7 @@ Page({
       })
     }
     this.getIndexInfo();
+  
     this.$wuxRater = App.Wux().$wuxRater;
   },
 

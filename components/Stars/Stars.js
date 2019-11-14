@@ -44,7 +44,7 @@ export default {
     let self = this;
     const options = Object.assign({},self.data(),self.setDefaults(),opts);
     // 实例化组件
-    // this.$wuxRater.init('decimal', {
+    // this.$wuxRater.init('id:decimal', options:{
     //   value: scores,
     //   disabled: !0,
     // })
@@ -67,10 +67,11 @@ export default {
         },
       }
     });
-    debugger
+  
     this.updateStars(id, component.page)
     this.updateStyle(id, component.page)
     this.updateValue(id, component.page)
+
     component.show()
   },
   /**
@@ -93,6 +94,7 @@ export default {
    * 更新style
    */
   updateStyle(id, page) {
+    
     const rater = page.data.$wux.rater[id]
     const max = rater.max
     const value = rater.value
