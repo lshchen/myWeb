@@ -30,7 +30,14 @@ Page({
     ],
     starsList: [],
   },
-
+  /**
+     * 查看文字全介绍 
+     */
+  showText() {
+    this.setData({
+      isShowAll: !this.data.isShowAll
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -40,9 +47,11 @@ Page({
         filmCode: options.id
       })
     }
+    this.$wuxRater = App.Wux().$wuxRater;
     this.getIndexInfo();
   
-    this.$wuxRater = App.Wux().$wuxRater;
+   
+    console.log(this.data)
   },
 
   /**
@@ -237,6 +246,7 @@ Page({
           if (data[i].FilmCode == this.data.filmCode) {
             var data = data[i];
             data.video_image = wx.getStorageSync('backend_domain') + data.video_image;
+            console.log(data.video_image)
             this.setData({
               details: data
             })
@@ -263,10 +273,13 @@ Page({
         for (var i = 0; i < detail.length; i++) {
           arryAct.push(detail[i])
         }
-
+        for (var i = 0; i < detail.length; i++) {
+          arryAct.push(detail[i])
+        }
         this.setData({
           starsList: arryAct
         })
+        console.log(this.data.startsList)
       })
   }
 })

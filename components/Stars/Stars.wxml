@@ -1,7 +1,12 @@
 <template name="rater">
   <view class="wux-rater {{ animateCss }}" wx:if="{{ !!stars.length }}">
-    <text class="wux-rater-box {{ value > index ? 'is-active' : '' }}" wx:for="{{ stars }}" wx:key="" bindtap="{{ bindtap }}" data-index="{{ index }}" style="color: {{ colors && colors[index] ? colors[index]: '#fff' }}; margin-right: {{ margin+'rpx' }}; font-size: {{ fontSize + 'rpx' }}; width: {{ fontSize + 'rpx' }}; height: {{ fontSize + 'rpx' }}; line-height: {{ fontSize + 'px' }}">
-			<text class="wux-rater-inner">{{ star }}<text class="wux-rater-outer" style="color: {{ activeColor }}; width: {{ cutPercent + '%'}}" wx:if="{{ cutPercent > 0 && cutIndex === index }}">{{ star }}</text></text>
+    <text class="wux-rater-box {{ value > index ? 'is-active' : '' }}" wx:for="{{ stars }}" wx:key="" bindtap="{{ bindTap }}" data-index="{{ index }}" style="color: {{ colors && colors[index] ? colors[index]: '#fff' }}; margin-right: {{ margin+'rpx' }}; font-size: {{ fontSize + 'rpx' }}; width: {{ fontSize + 'rpx' }}; height: {{ fontSize + 'rpx' }}; line-height: {{ fontSize + 'px' }}">
+			<text class="wux-rater-inner">
+        {{ star }}
+        <text class="wux-rater-outer" style="color: {{ activeColor }}; width: {{ cutPercent + '%'}}" wx:if="{{ cutPercent > 0 && cutIndex === index }}">
+          {{ star }}
+        </text>
+      </text>
     </text>
   </view>
 </template>

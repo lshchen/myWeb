@@ -58,6 +58,23 @@ export default {
           const rater = this.page.data.$wux.rater[id]
           const value = rater.value
           const disabled = rater.disabled
+
+          if (disabled) return !1
+
+          if (value === i + 1) {
+            this.page.setData({
+              [`$wux.rater.${id}.value`]: i
+            })
+          } else {
+            this.page.setData({
+              [`$wux.rater.${id}.value`]: i + 1
+            })
+          }
+
+          that.updateStyle(id, this.page)
+          that.updateValue(id, this.page)
+
+          typeof options.callback === `function` && options.callback(e)
         },
         /**
          * 显示

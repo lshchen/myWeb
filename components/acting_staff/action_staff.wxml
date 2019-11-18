@@ -1,7 +1,15 @@
 <!--components/acting_staff/action_staff.wxml-->
-<view>
-  <text>演职人员</text>
-  <scroll-view>
-    aa
-  </scroll-view>
+<view class="actor-section">
+    <text class="actor-section-title">演职人员</text>
+    <scroll-view class="scr-view" scroll-x="{{ true }}">
+        <view class="list-item">
+            <view class="scr-view-item" wx:for="{{ starts }}" wx:key="this">
+                <view>
+                    <image src="{{ item.image }}" mode="aspectFill"></image>
+                </view>
+                <view class="name ell">{{ item.name }}</view>
+                <view class="position-n ell">{{ item.type == 1? '导演' : '演员' }}</view>
+            </view>
+        </view>
+    </scroll-view>
 </view>

@@ -1,12 +1,28 @@
 <!--pages/movice_detail/movice_detail.wxml-->
-<import src="../../templates/buyTickets/buyTickets"/>
+<import src="../../templates/buyTickets/buyTickets" />
 <import src="../../components/Stars/Stars.wxml" />
 <view class="movice_details">
-    <view class="details">
-    <template is="rater" data="{{ ...$wux.rater.decimal }}" />
+  <view class="details">
+    <view class="movices_title">
+      <image src="{{details.video_image}}" class="video_image"></image>
+      <view class="movice_content">
+        <text class="title-txt ell">{{details.FilmName}}</text>
+        <view class="title-star">
+          <template is="rater" data="{{ ...$wux.rater.decimal }}" />
+          <text class="grade">{{ details.score }}</text>
+        </view>
+        <text class="title-type">{{ details.Version }}</text>
+        <text class="title-production">{{ details.Duration }}分钟</text>
+        <text class="title-time">{{ details.PublishDate }} 上映</text>
+      </view>
     </view>
-    <view class="starts">
-      <acting_staff></acting_staff>  
-    </view>
+  </view>
+  <view class="movie-text {{ isShowAll? 'show-all' : 'un-show' }}" bindtap="showText">{{ details.content }}</view>
+  <view class="pull" bindtap="showText">
+    <i class="iconfont icon-select pull-icon {{ isShowAll? 'down' : 'up' }}"></i>
+  </view>
 </view>
-<template is="buyTickets"></template>
+<view class="starts">
+  <acting_staff starts="{{starsList}}"></acting_staff>
+</view>
+<template is="buyTickets"></template> 
