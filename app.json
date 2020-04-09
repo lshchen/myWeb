@@ -1,36 +1,41 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
     "pages/richText/richText",
     "pages/movice_detail/movice_detail"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#E31A46",
-    "navigationBarTitleText": "世界影城",
-    "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": false,
-    "backgroundColor": "red",
-    "backgroundTextStyle": "dark"
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fff",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./assets/imgs/tabs/home.png",
+        "selectedIconPath": "./assets/imgs/tabs/home_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "停车缴费",
+        "iconPath": "./assets/imgs/tabs/park_icon.png",
+        "selectedIconPath": "./assets/imgs/tabs/park_icon_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./assets/imgs/tabs/mine.png",
+        "selectedIconPath": "./assets/imgs/tabs/mine_selected.png"
+      },
       {
         "pagePath": "pages/index/index",
         "text": "电影",
         "iconPath": "./assets/images/tabbar-icon/tabbar_movie.png",
         "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_movie.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "卖品",
-        "iconPath": "./assets/images/tabbar-icon/tabbar_shop.png",
-        "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_shop.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "我的",
-        "iconPath": "./assets/images/tabbar-icon/tabbar_user.png",
-        "selectedIconPath": "./assets/images/tabbar-icon/tabbar_selected_user.png"
       }
     ]
   },

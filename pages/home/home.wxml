@@ -1,0 +1,52 @@
+<scroll-view style="height: {{windowHeight}}px" scroll-x="false" scroll-y="true" bindscrolltolower="lower">
+  <view class="content">
+    <swiper class='swiper' indicator-dots="{{ true }}" autoplay="{{true}}" circular="{{ true }}" indicator-active-color="#51DAD2" interval="2000">
+      <swiper-item>
+        <image src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/7115f76ccda747999bf131dd320bbb7d.jpg"  mode='aspectFill'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/57af965089bb31647ae533219530881c.jpg"  mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+    <view class="list">
+      <image src="../../assets/imgs/zxns_nav.png"></image>
+      <image src="../../assets/imgs/slzs_nav.png"></image>
+      <image src="../../assets/imgs/lxwm_nav.png"></image>
+    </view>
+    <view class="activity">
+      <text class="line"></text>
+      <text class="title">热门活动</text>
+    </view>
+    <view class="info">
+      <image src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/c4a6db888fbeed600cea30d04694cf82.jpg" mode='aspectFill'></image>
+      <view class="date">
+        <text class="vitality">无线活力</text>
+        <text>2019-04-17</text>
+      </view>
+      <view class="desc">
+        长青城辐射长白、奥体、长青、东中街等沈阳新兴居住区，致力 于打造全新家庭休闲生活方式。
+      </view>
+    </view>
+    <view class="info">
+      <image src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/c4a6db888fbeed600cea30d04694cf82.jpg" mode='aspectFill'></image>
+      <view class="date">
+        <text class="vitality">无线活力</text>
+        <text>2019-04-17</text>
+      </view>
+      <view class="desc">
+        长青城辐射长白、奥体、长青、东中街等沈阳新兴居住区，致力 于打造全新家庭休闲生活方式。
+      </view>
+    </view>
+    <view class="info">
+      <image src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/c4a6db888fbeed600cea30d04694cf82.jpg" mode='aspectFill'></image>
+      <view class="date">
+        <text class="vitality">无线活力</text>
+        <text>2019-04-17</text>
+      </view>
+      <view class="desc">
+        长青城辐射长白、奥体、长青、东中街等沈阳新兴居住区，致力 于打造全新家庭休闲生活方式。
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{noMore}}" class="more">---没有更多了---</view>
+</scroll-view>
