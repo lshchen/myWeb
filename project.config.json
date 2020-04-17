@@ -61,6 +61,19 @@
 					"pathName": "pages/movice_detail/movice_detail",
 					"query": "id=1",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "停车收费",
+					"pathName": "pages/car/car_pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"scene": null
 				}
 			]
 		}

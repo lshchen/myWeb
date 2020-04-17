@@ -1,0 +1,41 @@
+<!--<van-toast id="van-toast"/>-->
+<view class="mine">
+  <view class="user_infos">
+      <view class="first">
+        <view class="avart">
+          <image src="{{avartUrl}}"></image>
+        </view>
+        <view class="infos">
+          <view class="name" wx:if="{{isLogin}}">
+            <text>{{name}}</text>
+            <image src="../../assets/imgs/refresh1.png" class="refresh"></image>
+            <image src="../../assets/icon/icon_common.png" class="common"></image>
+          </view>
+          <view class="vips" wx:if="{{isLogin}}">
+
+          </view>
+          <button wx:if="{{!isLogin && canIUse}}" class="signIn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            点击登录
+          </button>
+        </view>
+      </view>
+      <view class="second">
+        <view class="list_item">
+          <text class="font">--</text>
+          <text>可用积分</text>
+        </view>
+        <view class="list_item">
+          <text class="font">--</text>
+          <text>余额</text>
+        </view>
+        <view class="list_item">
+          <text class="font">--</text>
+          <text>卡券</text>
+        </view>
+      </view>
+      <view class="three">
+        <image src="../../assets/imgs/mineqrcode.png"></image>
+        <view>NO.1234 5678 9123 4567 0</view>
+      </view>
+  </view>
+</view>

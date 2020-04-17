@@ -1,0 +1,53 @@
+<view class="car">
+  <view class="search">
+    <view class="content">
+      <view class="title">
+        <text>商城</text>
+        <text>可用车位9999</text>
+      </view>
+      <view class="condition">
+        <view class="province">辽</view>
+        <input type="search" placeholder="请先设置您的常用车牌"/>
+        <view class="car_num">
+          常用车牌
+        </view>
+      </view>
+      <view class="car_search">
+        查询
+      </view>
+    </view>
+  </view>
+  <view class="lists">
+    <view class="items">
+      <image src="../../assets/imgs/mycar.png" alt=""/>
+      <text>我的爱车</text>
+    </view>
+    <view class="items">
+      <image src="../../assets/imgs/jiaofei.png" alt=""/>
+      <text>停车缴费</text>
+    </view>
+    <view class="items">
+      <image src="../../assets/imgs/jiaofeirecord.png" alt=""/>
+      <text>停车记录</text>
+    </view>
+  </view>
+  <view class="notice">
+    <view class="notice_title">
+      停车须知
+    </view>
+    <view class="charge">
+      <view class="title">停车费用标准：</view>
+      <view class="desc">
+        本停车场为24小时计时收费，收费标准为每台车每小时5 元，累 计免费停车3小时，超出3小时按照每台车5元/小时 元，累 计免费停车3小时，超出3小时按照每台车5元/小时收费。缴费成 功后请于30分钟内离场，超过30分钟未离收费。缴费成 功后请于30分钟内离场，超过30分钟未离场，将重新开始计费
+      </view>
+    </view>
+    <view class="integral">
+      <view class="title">
+        积分支付标准：
+      </view>
+      <view class="desc">
+        钻卡会员营业期间免费停车，其他会员享积分兑换停车费，翡翠 会员300分/小时，黄金会员400分/小时，水晶、珍翡翠 会员300分/小时，黄金会员400分/小时，水晶、珍珠、普通会 员500分/小时
+      </view>
+    </view>
+  </view>
+</view>
