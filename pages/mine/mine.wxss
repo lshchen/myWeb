@@ -18,6 +18,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+.mine .user_infos .first .infos .name{
+  display: flex;
+  align-items: center;
+
+}
 .mine .user_infos .first .infos .refresh{
   width: 28rpx !important;
   height: 28rpx !important;
@@ -26,14 +31,19 @@
   justify-content: center;
   align-items: center;
   background: none;
-
+  margin: 0 10rpx;
 }
 .mine .user_infos .first .infos .common{
   width: 76.66666rpx;
   height: 28.33333rpx;
   margin: auto 0;
   margin-left: 12rpx;
-
+}
+.vips image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
 }
 .mine .user_infos .first .avart image{
   width: 102rpx;

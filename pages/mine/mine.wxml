@@ -9,10 +9,12 @@
           <view class="name" wx:if="{{isLogin}}">
             <text>{{name}}</text>
             <image src="../../assets/imgs/refresh1.png" class="refresh"></image>
-            <image src="../../assets/icon/icon_common.png" class="common"></image>
+            <image src="../../assets/imgs/icon/icon_common.png" class="common"></image>
           </view>
           <view class="vips" wx:if="{{isLogin}}">
-
+            <image mode="aspectFit" src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/9ed0447fcc28e97a2e39391d18d67038.png"></image>
+            <image mode="aspectFit" src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/9ed0447fcc28e97a2e39391d18d67038.png"></image>
+            <image mode="aspectFit" src="https://foreveryoungcity-1253855688.cos.ap-beijing.myqcloud.com/2019-08/9ed0447fcc28e97a2e39391d18d67038.png"></image>
           </view>
           <button wx:if="{{!isLogin && canIUse}}" class="signIn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
             点击登录
