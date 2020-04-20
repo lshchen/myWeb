@@ -40,4 +40,88 @@
         <view>NO.1234 5678 9123 4567 0</view>
       </view>
   </view>
+  <view class="orders first_item">
+    <view class="order">
+      <text class="my_order">我的订单</text>
+      <text class="all_order">全部订单</text>
+    </view>
+    <view class="order_type">
+      <view class="order_item">
+        <image src="../../assets/imgs/3333-33-33.png"></image>
+        <text>待发货</text>
+      </view>
+      <view class="order_item">
+        <image src="../../assets/imgs/3434-34.png"></image>
+        <text>待收货</text>
+      </view>
+      <view class="order_item">
+        <image src="../../assets/imgs/365656-35.png"></image>
+        <text>已完成</text>
+      </view>
+    </view>
+  </view>
+  <view class="orders">
+    <view class="order">
+      <text class="my_order">我的会员等级</text>
+      <text class="all_order">查看更多等级权限</text>
+    </view>
+    <view class="levels">
+      <image src="../../assets/imgs/icon/icon_class.png"></image>
+      <text class="card_type">普卡</text>
+      <view class="progress">
+        <view class="desc">成长值5999/10000</view>
+        <view class="line"></view>
+        <image src="../../assets/imgs/icon/jingdu_50.png"></image>
+      </view>
+      <text>银卡</text>
+    </view>
+  </view>
+  <view class="orders">
+    <view class="order">
+      <text class="my_order">我的社区会员</text>
+      <text class="all_order">更多信息</text>
+    </view>
+    <view class="vip_infos">
+      <view class="users">
+        <view class="user_avart">
+          <image src="../../assets/imgs/logo.png"></image>
+          <image src="../../assets/imgs/logo.png"></image>
+          <image src="../../assets/imgs/logo.png"></image>
+        </view>
+        <view class="user_num">
+          已有3名成员
+        </view>
+      </view>
+      <view class="counts">
+        <text>5999</text>
+        <text>共享成长值</text>
+        <text>9000</text>
+        <text>合计积分</text>
+      </view>
+    </view>
+    <view class="user_add">
+      <image src="../../assets/imgs/icon/icon-addfly.png"></image>
+      <view>邀请好友组成家庭</view>
+    </view>
+  </view>
+  <view class="lists">
+    <view class="list_item info">
+      我的消息
+    </view>
+    <view class="list_item">
+      我报名的活动
+    </view>
+    <view class="list_item">
+      意见反馈
+    </view>
+    <view class="list_item">
+      帮助中心
+    </view>
+    <view class="list_phone">
+      客服电话
+      <view class="phone">
+        服务时间：9:00-22:00
+      </view>
+    </view>
+  </view>
 </view>
