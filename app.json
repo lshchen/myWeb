@@ -5,7 +5,8 @@
     "pages/richText/richText",
     "pages/movice_detail/movice_detail",
     "pages/car/car_pay",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/aa"
   ],
   "window": {
     "navigationBarTitleText": "商城",
