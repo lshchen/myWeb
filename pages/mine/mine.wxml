@@ -41,7 +41,7 @@
       </view>
   </view>
   <view class="orders first_item">
-    <view class="order">
+    <view class="order" bindtap="lookList">
       <text class="my_order">我的订单</text>
       <text class="all_order">全部订单</text>
     </view>

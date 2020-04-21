@@ -1,0 +1,3 @@
+<!--components/order_list/order_list.wxml-->
+<text>{{sum}}</text>
+<button bindtap="onTap">click</button>

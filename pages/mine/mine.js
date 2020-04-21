@@ -1,5 +1,6 @@
 // pages/mine/mine.js
-
+import { createStoreBindings } from 'mobx-miniprogram-bindings'
+import { store } from '../../assets/js/store'
 import Toast from '../../miniprogram_npm/vant-weapp/toast/toast';
 Page({
 
@@ -17,6 +18,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.storeBindings = createStoreBindings(this, {
+      store,
+      fields: ['numA', 'numB', 'sum'],
+      actions: ['update'],
+    });
+    this.storeBindings.updateStoreBindings()
     Toast("hello");
     // 查看是否授权
     let self = this;
@@ -64,7 +71,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    this.storeBindings.destroyStoreBindings()
   },
 
   /**
@@ -103,5 +110,11 @@ Page({
     } else {
       //用户按了拒绝按钮
     }
+  },
+  lookList () {
+    console.log('aa');
+    wx.navigateTo({
+      url: '/components/order_list/order_list'
+    })
   }
 })
