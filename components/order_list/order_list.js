@@ -54,6 +54,24 @@ Component({
       })
       // 立刻更新
       this.updateStoreBindings()
+    },
+    message1 (data){
+      console.log(data)
+    }
+  },
+  pageLifetimes: {
+    show: function() {
+      // 页面被展示
+      const eventChannel = this.getOpenerEventChannel();
+      eventChannel.emit('acceptDataFromOpenedPage', {data: 'test...'});
+      eventChannel.emit('someEvent', {data: 'test...1'});
+      eventChannel.on('message',this.message1);
+    },
+    hide: function() {
+      // 页面被隐藏
+    },
+    resize: function(size) {
+      // 页面尺寸变化
     }
   }
 })
