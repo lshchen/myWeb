@@ -50,7 +50,8 @@ App({
     });
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    requestTasks: {},
   },
   /**获取url */
   getUrl (key) {

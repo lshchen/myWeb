@@ -57,7 +57,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.setTabBarBadge({
+      index: 1,
+      text: 'aaaa'
+    })
+    wx.setTabBarItem({
+      index: 1,
+      text: 'bb'
+    })
+    wx.showTabBarRedDot({
+      index: 0
+    })
+    wx.onKeyboardHeightChange({
+    })
+    wx.createAnimation({
 
+    })
   },
 
   /**

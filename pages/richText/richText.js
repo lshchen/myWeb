@@ -12,7 +12,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.showNavigationBarLoading();
+    wx.setNavigationBarTitle({
+      title: '去你奶奶个腿的。。。'
+    })
+    // wx.setNavigationBarColor()
+    wx.hideHomeButton();
+    // wx.setTopBarText({
+    //   text: 'hello, world!'
+    // })
+    let requestTask = wx.request({
+      url: '/login',
+      type: 'post',
+      dataType: 'json',
+      success (res) {
+        console.log(res);
+      }
+    });
+    console.log(requestTask);
   },
 
   /**

@@ -3,13 +3,23 @@ const app = getApp();
  * 封装request请求
  */
 const PromiseRequest = (url,data,method,dataType)=>{
+  // 请求之前，先前之前的请求取消掉
+  if (param.requestTaskKey && app.requestTasks[param.requestTaskKey]) {
+    try {
+
+      //getApp() 获取全局app对象内容
+      app.requestTasks[param.requestTaskKey].abort()
+    } catch (e) {
+      console.error(e)
+    }
+  }
   url = app.getUrl(url);
   !url? '': url;
   !data? '':data;
   dataType === 'josn' ? 'application/json' : 'application/x-www-form-urlencoded';
   !method? 'POST': method;
   return new Promise((resolve,reject)=>{
-    wx.request({
+    const requestTask = wx.request({
       url: url,
       data: data,
       method: method,
@@ -27,6 +37,11 @@ const PromiseRequest = (url,data,method,dataType)=>{
         reject('网络出错');
       }
     })
+    if (param.requestTaskKey) {
+
+      // 将当前请求存入全局对象里
+      getApp().requestTasks[param.requestTaskKey] = requestTask
+    }
   }).catch(function (reason) {
     console.log('catch:', reason);
   });
